@@ -5,7 +5,7 @@ import faiss
 import numpy as np
 from aidial_client import AsyncDial
 from aidial_sdk.chat_completion import Message, Role
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from sentence_transformers import SentenceTransformer
 
 from task.tools.base import BaseTool

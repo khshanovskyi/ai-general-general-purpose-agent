@@ -51,7 +51,6 @@ class GeneralPurposeAgent:
 
         tool_call_index_map = {}
         content = ''
-        custom_content: CustomContent = CustomContent(attachments=[])
         async for chunk in chunks:
             if chunk.choices and len(chunk.choices) > 0:
                 delta = chunk.choices[0].delta
@@ -72,7 +71,6 @@ class GeneralPurposeAgent:
         assistant_message = Message(
             role=Role.ASSISTANT,
             content=content,
-            custom_content=custom_content,
             tool_calls=[ToolCall.validate(tool_call) for tool_call in tool_call_index_map.values()]
         )
 

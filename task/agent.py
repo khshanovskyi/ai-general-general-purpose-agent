@@ -3,7 +3,7 @@ import json
 from typing import Any
 
 from aidial_client import AsyncDial
-from aidial_client.types.chat.legacy.chat_completion import CustomContent, ToolCall
+from aidial_client.types.chat.legacy.chat_completion import ToolCall
 from aidial_sdk.chat_completion import Message, Role, Choice, Request, Response
 
 from task.tools.base import BaseTool

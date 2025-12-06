@@ -70,7 +70,7 @@
 1. Add to [DIAL core config](core/config.json) dall-e-3 model:
    - Key is `dall-e-3` with such configurations:
      - displayName = `DALL-E-3`
-     - endpoint = `http://adapter-dial-openai:5000/openai/deployments/dall-e-3/chat/completion`
+     - endpoint = `http://adapter-dial-openai:5000/openai/deployments/dall-e-3/chat/completions`
      - iconUrl = `http://localhost:3001/gpt3.svg`
      - type = `chat`
      - upstreams = array with dict of:
